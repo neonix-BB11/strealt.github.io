@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenue sur ma page web</h1>
+    <p id="message">Cliquez sur le bouton pour changer ce texte.</p>
+    <button onclick="changerTexte()">Cliquez-moi</button>
+
+    <script>
+        function changerTexte() {
+            document.getElementById("message").innerText = "Le texte a été changé !";
+        }
+    </script>
+
+</body>
+</html>
